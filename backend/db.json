@@ -1,0 +1,170 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin User",
+      "email": "admin@tmt.com",
+      "password_hash": "$2a$10$G.D8kwoIfwa5bVdm5SvnGe1zCZinq.HYasCin4lGefdiyuuS2kyJ2",
+      "role": "admin",
+      "created_at": "2026-04-07T07:10:25.402Z"
+    },
+    {
+      "id": 2,
+      "name": "Staff One",
+      "email": "staff1@tmt.com",
+      "password_hash": "$2a$10$iADz9IgvgwtFEvVXgdGeseupHjhJ.udzokcNuTOmuuIRZp6a9qNQS",
+      "role": "staff",
+      "created_at": "2026-04-07T07:10:25.591Z"
+    },
+    {
+      "id": 3,
+      "name": "Staff Two",
+      "email": "staff2@tmt.com",
+      "password_hash": "$2a$10$r9icIZmHf6XAEl1/S488muVVTFcbfgZ2Zbh6y0DGFBquZhISmP.Qy",
+      "role": "staff",
+      "created_at": "2026-04-07T07:10:25.754Z"
+    },
+    {
+      "id": 4,
+      "name": "Staff Three",
+      "email": "staff3@tmt.com",
+      "password_hash": "$2a$10$HNnzNY7xGplk3Lz6YUsOL.72vcNeBcOrgT8QLatdp9SVAnvNDYf6y",
+      "role": "staff",
+      "created_at": "2026-04-07T07:10:25.916Z"
+    }
+  ],
+  "suppliers": [
+    {
+      "id": 1,
+      "name": "Steel Corp India",
+      "contact": "9876543210",
+      "address": "12 Industrial Area, Mumbai",
+      "gstin": "27AABCS1234A1Z5",
+      "created_at": "2026-04-07T07:10:25.922Z"
+    },
+    {
+      "id": 2,
+      "name": "RajLakshmi Steels",
+      "contact": "9988776655",
+      "address": "45 Market Road, Pune",
+      "gstin": "27AALCR5678B2Z3",
+      "created_at": "2026-04-07T07:10:25.922Z"
+    },
+    {
+      "id": 3,
+      "name": "National TMT Depot",
+      "contact": "8877665544",
+      "address": "78 Steel Hub, Nagpur",
+      "gstin": "27AANCT9012C3Z1",
+      "created_at": "2026-04-07T07:10:25.922Z"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "TMT Rod 8mm",
+      "grade": "Fe415",
+      "length_ft": 40,
+      "weight_per_mt": 395,
+      "unit": "MT",
+      "current_stock_mt": 10.5,
+      "min_stock_mt": 2,
+      "created_at": "2026-04-07T07:10:25.924Z"
+    },
+    {
+      "id": 2,
+      "name": "TMT Rod 10mm",
+      "grade": "Fe415",
+      "length_ft": 40,
+      "weight_per_mt": 617,
+      "unit": "MT",
+      "current_stock_mt": 8,
+      "min_stock_mt": 2,
+      "created_at": "2026-04-07T07:10:25.924Z"
+    },
+    {
+      "id": 3,
+      "name": "TMT Rod 12mm",
+      "grade": "Fe500",
+      "length_ft": 40,
+      "weight_per_mt": 888,
+      "unit": "MT",
+      "current_stock_mt": 15,
+      "min_stock_mt": 3,
+      "created_at": "2026-04-07T07:10:25.924Z"
+    },
+    {
+      "id": 4,
+      "name": "TMT Rod 16mm",
+      "grade": "Fe500",
+      "length_ft": 40,
+      "weight_per_mt": 1579,
+      "unit": "MT",
+      "current_stock_mt": 20,
+      "min_stock_mt": 5,
+      "created_at": "2026-04-07T07:10:25.924Z"
+    },
+    {
+      "id": 5,
+      "name": "TMT Rod 20mm",
+      "grade": "Fe550D",
+      "length_ft": 40,
+      "weight_per_mt": 2469,
+      "unit": "MT",
+      "current_stock_mt": 12,
+      "min_stock_mt": 3,
+      "created_at": "2026-04-07T07:10:25.924Z"
+    },
+    {
+      "id": 6,
+      "name": "TMT Rod 32MM",
+      "grade": "Fe550D",
+      "length_ft": 40,
+      "weight_per_mt": 1000,
+      "unit": "MT",
+      "current_stock_mt": 0,
+      "min_stock_mt": 1,
+      "created_at": "2026-04-07T07:29:20.865Z"
+    }
+  ],
+  "stock_movements": [
+    {
+      "id": 1,
+      "product_id": 2,
+      "type": "IN",
+      "quantity_mt": 5,
+      "rate_per_mt": 58000,
+      "supplier_id": 3,
+      "reference": "123456789",
+      "notes": "",
+      "created_at": "2026-04-08T06:31:43.741Z"
+    },
+    {
+      "id": 2,
+      "product_id": 2,
+      "type": "OUT",
+      "quantity_mt": 5,
+      "rate_per_mt": 58000,
+      "supplier_id": null,
+      "reference": "123456788",
+      "notes": "",
+      "created_at": "2026-04-08T06:32:36.496Z"
+    }
+  ],
+  "invoices": [
+    {
+      "id": 1,
+      "invoice_number": "INV-2026-0001",
+      "customer_name": "xyz llp",
+      "customer_gstin": "27Adxpj1012H",
+      "customer_address": "Dyu",
+      "items_json": "[{\"product_id\":1,\"product_name\":\"TMT Rod 8mm\",\"quantity_mt\":5,\"rate_per_mt\":60000},{\"product_id\":3,\"product_name\":\"TMT Rod 12mm\",\"quantity_mt\":2,\"rate_per_mt\":58000},{\"product_id\":4,\"product_name\":\"TMT Rod 16mm\",\"quantity_mt\":4,\"rate_per_mt\":58000}]",
+      "subtotal": 648000,
+      "gst_rate": 18,
+      "gst_amount": 116640,
+      "total_amount": 764640,
+      "created_by": 1,
+      "created_at": "2026-04-08T06:33:54.357Z"
+    }
+  ]
+}

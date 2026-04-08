@@ -1,0 +1,14 @@
+const express = require('express');
+const cors    = require('cors');
+require('./db');
+const app = express();
+app.use(cors({ origin: 'http://localhost:3000' }));
+app.use(express.json());
+app.use('/api/auth',      require('./routes/auth'));
+app.use('/api/products',  require('./routes/products'));
+app.use('/api/stock',     require('./routes/stock'));
+app.use('/api/suppliers', require('./routes/suppliers'));
+app.use('/api/invoices',  require('./routes/invoices'));
+app.use('/api/reports',   require('./routes/reports'));
+app.get('/', (req, res) => res.json({ message: 'TMT Inventory API running' }));
+app.listen(5000, () => console.log('TMT Backend running on http://localhost:5000'));
